@@ -15,10 +15,9 @@
             background: #0b72b9;
             color: #fff;
             padding: 14px 20px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-            z-index: 1000;
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
 
         .site-header h1 {
@@ -28,24 +27,33 @@
             line-height: 1;
         }
 
-        .row {
+        
+        nav.header-navi ul {
+            list-style: none;
             display: flex;
-            gap: 1rem;
-            align-items: flex-start;
+            gap: 2rem;
+            align-items: center;
+        }
+        nav.header-navi a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
         }
 
-        .header-navi {
-            display: flex;
-            gap: 1rem;
-            align-items: flex-start;
-            align-self: left;
-        }
+        /* to add more and to the hover/focus effect */
+        nav.header-navi a:focus,
+        nav.header-navi a:hover {
+            text-decoration: underline;
+        } 
 
         main {
-            padding-top: calc(14px + 1.25rem + 20px); 
+            padding-top: calc(14px + 1.25rem + 20px);
         }
 
-
+        @media (max-width: 640px) {
+            .site-header { padding: 12px 14px; }
+            nav.header-navi ul { gap: 0.5rem; }
+        }
 
     </style>
 
@@ -53,16 +61,19 @@
 <body>
     <header class="site-header">
         <h1>Student Sanctuary</h1>
-        <header-navi>
-            <a href="#">Home</a>
-            <a href="#">Tips</a>
-            <a href="#">Form</a>
-            <a href="#">Resources</a>
-        </header-navi>
+
+        <nav class="header-navi">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Form</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <h1>345</h1>
+        <h1>000</h1>
     </main>
 
 </body>
