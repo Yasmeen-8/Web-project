@@ -28,19 +28,37 @@
             line-height: 1;
         }
 
+        .row {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .header-navi {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            align-self: left;
+        }
+
         main {
             padding-top: calc(14px + 1.25rem + 20px); 
         }
 
-        @media (min-width: 640px) {
-            .site-header h1 { font-size: 1.5rem; }
-        }
+
+
     </style>
 
 </head>
 <body>
     <header class="site-header">
         <h1>Student Sanctuary</h1>
+        <header-navi>
+            <a href="#">Home</a>
+            <a href="#">Tips</a>
+            <a href="#">Form</a>
+            <a href="#">Resources</a>
+        </header-navi>
     </header>
 
     <main>
