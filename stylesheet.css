@@ -1,5 +1,13 @@
 
-       
+       /* GLOBAL STYLES */
+       body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(248, 248, 248);
+            color: #151b49;
+        }
        
        /* HEADER AND FOOTER STYLE CLASSES */
        
@@ -11,9 +19,9 @@
             padding: 12px 50px;
             display: flex;
             align-items: center;
-            /* justify-content: space-around; */
             background: linear-gradient(90deg, #3241af 0%, #151B49 100%);
             color: white;
+            box-shadow: #929292 0px 4px 6px -1px, #7f7f7f 0px 2px 4px -1px;
         }
 
         .site-header h1 {
@@ -61,6 +69,10 @@
             /* position: fixed; */
 
         }
+
+
+
+        /* BUTTON STYLE CLASSES */
 
         .button-style {
             border-radius: 30px;
