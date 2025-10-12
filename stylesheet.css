@@ -1,0 +1,78 @@
+
+       
+       
+       /* HEADER AND FOOTER STYLE CLASSES */
+       
+       .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 12px 50px;
+            display: flex;
+            align-items: center;
+            /* justify-content: space-around; */
+            background: linear-gradient(90deg, #3241af 0%, #151B49 100%);
+            color: white;
+        }
+
+        .site-header h1 {
+            margin: 0;
+            font-size: 1.75rem;
+            font-weight: 800;
+            line-height: 0;
+        }
+
+        nav.header-navi ul {
+            list-style: none;
+            display: flex;
+            gap: 0.5rem;
+            align-items: flex-end;
+        }
+
+
+        nav.header-navi a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* to add more and to the hover/focus effect */
+        nav.header-navi a:focus,
+        nav.header-navi a:hover {
+            text-decoration: underline;
+        } 
+
+        .main {
+            padding-top: calc(14px + 1.25rem + 60px);
+            
+        }
+
+
+        .footer {
+            width: 100%;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #262F6D;
+            color: white;
+            margin-top: 5%;
+            /* position: fixed; */
+
+        }
+
+        .button-style {
+            border-radius: 30px;
+            border: 2px solid #161C40;
+            background: #374398;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+
+
+/* FORUM STYLE CLASSES */ 
+
