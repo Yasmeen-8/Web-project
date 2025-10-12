@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <title>Mental Health Student Survey</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: navy;
+                padding: 20px;
+
+            }
+            h1 {
+                text-align: center;
+                color: rgb(0, 255, 255);
+            }
+            form {
+                max-width: 700px;
+                margin: 0 auto;
+                background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px white;
+            }
+            .question {
+                margin-bottom: 25px;
+            }
+            label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            input[type="text"],
+            textarea,
+            select {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"]{
+                margin-right: 6px;
+            }
+
+            button {
+                padding: 10px 20px;
+                background-color: rgb(0, 255, 255);
+                color:rgb(3, 3, 111);
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #b1bdc9;
+                color: #000000;
+            }
+
+            .options label {
+                display: block;
+                margin-top: 5px;
+            }
+            </style>
+            </head>
+        </body>
+
+       <h1>Mental Health Student Survey</h1>
+
+  <form action="#" method="post">
+
+   <label>1. How often do you feel overwhelmed by academic responsibilities?</label>
+      <div class="options">
+        <label><input type="radio" name="q1" value="Never"> Never</label>
+        <label><input type="radio" name="q1" value="Rarely"> Rarely</label>
+        <label><input type="radio" name="q1" value="Sometimes"> Sometimes</label>
+        <label><input type="radio" name="q1" value="Often"> Often</label>
+        <label><input type="radio" name="q1" value="Almost always"> Almost always</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>2. Do you feel that your university provides enough mental health support services?</label>
+      <div class="options">
+        <label><input type="radio" name="q2" value="Yes"> Yes</label>
+        <label><input type="radio" name="q2" value="No"> No</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>3. What coping strategies do you use when you're feeling stressed?</label>
+      <textarea name="q3" rows="4"></textarea>
+    </div>
+
+    <div class="question">
+      <label>4. On average, how many hours of sleep do you get on a school night?</label>
+      <div class="options">
+        <label><input type="radio" name="q4" value="Less than 4 hours"> Less than 4 hours</label>
+        <label><input type="radio" name="q4" value="4-5 hours"> 4-5 hours</label>
+        <label><input type="radio" name="q4" value="6-7 hours"> 6-7 hours</label>
+        <label><input type="radio" name="q4" value="8 or more hours"> 8 or more hours</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>5. How comfortable are you discussing your mental health with friends or peers?</label>
+      <div class="options">
+        <label><input type="radio" name="q5" value="Very uncomfortable"> Very uncomfortable</label>
+        <label><input type="radio" name="q5" value="Somewhat uncomfortable"> Somewhat uncomfortable</label>
+        <label><input type="radio" name="q5" value="Neutral"> Neutral</label>
+        <label><input type="radio" name="q5" value="Somewhat comfortable"> Somewhat comfortable</label>
+        <label><input type="radio" name="q5" value="Very comfortable"> Very comfortable</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>6. Have you ever skipped class or avoided assignments due to mental health struggles?</label>
+      <div class="options">
+        <label><input type="radio" name="q6" value="Yes"> Yes</label>
+        <label><input type="radio" name="q6" value="No"> No</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>7. What is one thing the university could do to better support student mental health?</label>
+      <textarea name="q7" rows="4"></textarea>
+    </div>
+
+    <div class="question">
+      <label>8. Which of the following most negatively affects your mental health?</label>
+      <div class="options">
+        <label><input type="radio" name="q8" value="Academic pressure"> Academic pressure</label>
+        <label><input type="radio" name="q8" value="Financial stress"> Financial stress</label>
+        <label><input type="radio" name="q8" value="Social isolation"> Social isolation</label>
+        <label><input type="radio" name="q8" value="Family issues"> Family issues</label>
+        <label><input type="radio" name="q8" value="Health problems"> Health problems</label>
+        <label><input type="radio" name="q8" value="Other"> Other (please specify)</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>9. How would you rate your current mental health?</label>
+      <div class="options">
+        <label><input type="radio" name="q9" value="Very poor"> Very poor</label>
+        <label><input type="radio" name="q9" value="Poor"> Poor</label>
+        <label><input type="radio" name="q9" value="Fair"> Fair</label>
+        <label><input type="radio" name="q9" value="Good"> Good</label>
+        <label><input type="radio" name="q9" value="Excellent"> Excellent</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <label>10. Have you used any campus services (e.g. academic skills center, support groups)?</label>
+      <div class="options">
+        <label><input type="radio" name="q10" value="Yes, regularly"> Yes, regularly</label>
+        <label><input type="radio" name="q10" value="Yes, once or twice"> Yes, once or twice</label>
+        <label><input type="radio" name="q10" value="No, but I plan to"> No, but I plan to</label>
+        <label><input type="radio" name="q10" value="No, and I do not plan to"> No, and I do not plan to</label>
+      </div>
+    </div>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
+
