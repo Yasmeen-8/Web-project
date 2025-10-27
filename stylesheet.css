@@ -53,8 +53,10 @@
         } 
 
         .main {
-            padding-top: calc(14px + 1.25rem + 60px);
-            
+            padding-top: calc(14px + 1.25rem + 120px);
+            padding-left: 6%;
+            align-items: center;
+            display: flex;
         }
 
 
@@ -89,6 +91,11 @@
             background: #202c8b;
             color: white;
             border: 2px solid #151B49;
+        }
+
+        .button-group{
+            align-items: center;
+            gap: 10px;
         }
 
 
