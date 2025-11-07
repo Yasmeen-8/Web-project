@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
        /* GLOBAL STYLES */
        body {
@@ -149,3 +150,118 @@
 
 /* FORUM STYLE CLASSES */ 
 
+=======
+
+       /* GLOBAL STYLES */
+       body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(248, 248, 248);
+            color: #151b49;
+        }
+       
+       /* HEADER AND FOOTER STYLE CLASSES */
+       
+       .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 12px 50px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, #3241af 0%, #151B49 100%);
+            color: white;
+            box-shadow: #929292 0px 4px 6px -1px, #7f7f7f 0px 2px 4px -1px;
+        }
+
+        .site-header h1 {
+            margin: 0;
+            font-size: 1.75rem;
+            font-weight: 800;
+            line-height: 0;
+            /* letter-spacing: 0.1rem; */
+        }
+
+        nav.header-navi ul {
+            list-style: none;
+            display: flex;
+            gap: 0.5rem;
+            align-items: flex-end;
+        }
+
+
+        nav.header-navi a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* to add more and to the hover/focus effect */
+        nav.header-navi a:focus,
+        nav.header-navi a:hover {
+            text-decoration: underline;
+        } 
+
+        .main {
+            padding-top: calc(14px + 1.25rem + 120px);
+            padding-left: 6%;
+            align-items: center;
+            display: flex;
+        }
+
+        .items {
+        display: flex; 
+        align-items: center; 
+        margin-top: 50px; 
+        margin-left: 75px;
+        }
+
+
+        .footer {
+            width: 100%;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #262F6D;
+            color: white;
+            margin-top: 5%;
+            /* position: fixed; */
+
+        }
+
+
+
+        /* BUTTON STYLE CLASSES */
+
+        .button-style {
+            border-radius: 30px;
+            border: 2px solid #161C40;
+            background: #374398;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button-style:hover {
+            background: #202c8b;
+            color: white;
+            border: 2px solid #151B49;
+        }
+
+        .button-group{
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* space between buttons */
+            align-items: flex-start; /* left-align; use center to center them */
+        }
+
+
+
+/* FORUM STYLE CLASSES */ 
+
+>>>>>>> 2175966f9b1a2b0a9aea07cf9367c80d8bd24fcb
