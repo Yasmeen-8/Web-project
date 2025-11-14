@@ -104,23 +104,51 @@
 
         /*Information styles*/
 
-        big{
-            padding: 20px;
+        .big{
+            padding: 30px;
             text-align: center;
             font-size: 200%;
             margin: 30px 0;
         }
 
-        h1{
-            text-align: center;
-            font-size: 200%;
-            margin: 30px 0;
-        }
+
 
         .pic{
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
+        }
+
+        #community-Icon{
+            width: 300;
+            height: 215;
+            range: 0 deg;
+            opacity: 1;
+
+        }
+
+        #mental-Icon{
+            Width: 375px;
+            Height: 250px;
+            range: 0 deg;
+            opacity: 1;
+
+        }
+
+        #financial-icon{
+            width: 250;
+            height: 250;
+            range: 0 deg;
+            opacity: 1;
+
+        }
+
+        #academic-icon{
+            width: 300;
+            height: 229;
+            range: 0 deg;
+            opacity: 1;
+
         }
 
         section{
@@ -141,8 +169,53 @@
         }
 
         h2{
-            color: #333;
+            color: #d40d0d;
             margin: 10px 0;
+            font-family: 'Libre Bodoni', Courier, monospace;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 35px;
+            padding-bottom: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+
+        }
+
+        ul {
+            list-style-type: none; 
+            padding: 0;           
+        }
+
+        .resource-item {
+            margin: 10px 0;      
+            padding: 10px;       
+            border: 1px solid #ccc; 
+            border-radius: 5px;   
+            background-color:#c0bff5; 
+            font-family: Arial, Helvetica, sans-serif, Times, serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 22px;
+            padding-bottom: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+
+        }
+
+        .resource-item:hover {
+            background-color: #ebd1f7;
+        }
+
+        .resource-link {
+            text-decoration: none;  
+            color: #007BFF;       
+            font-weight: bold;     
+        }
+
+        .resource-link:hover {
+            color: #cf6ae9;       
         }
 
         @media (max-width: 768px) {
