@@ -1,6 +1,6 @@
 
        /* GLOBAL STYLES */
-       body {
+       body {   
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -53,6 +53,7 @@
         } 
 
         .main {
+<<<<<<< HEAD
             padding-top: calc(14px + 1.25rem + 120px);
             padding-left: 6%;
             align-items: center;
@@ -64,6 +65,22 @@
         align-items: center; 
         margin-top: 50px; 
         margin-left: 75px;
+=======
+           padding-top: calc(14px + 1.25rem + 120px);
+           padding-left: 6%;
+           align-items: center;
+           display: flex;
+            
+>>>>>>> 8357b6749f74b09c421318a03eba124ae7412d3d
+        }
+
+        .items{
+            
+             padding-top: calc(14px + 1.25rem + 6px);
+           padding-left: 6%;
+           align-items: center;
+           display: flex;
+
         }
 
 
@@ -100,6 +117,7 @@
             border: 2px solid #151B49;
         }
 
+<<<<<<< HEAD
         .button-group{
             display: flex;
             flex-direction: column;
@@ -107,7 +125,146 @@
             align-items: flex-start; /* left-align; use center to center them */
         }
 
+=======
+        /*Information styles*/
+
+        .big{
+            padding: 30px;
+            text-align: center;
+            font-size: 200%;
+            margin: 30px 0;
+            
+          
+        }
+
+        .pic{
+            
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+           
+   
+   
+        }
+      
+        
+        .pic img {
+            width: 150px; 
+            height: 150px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            margin: 10px 0; 
+           
+        }
+
+        section{
+            background-color: rgb(212, 213, 247);
+            border-radius: 5px;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            margin: 20px auto;
+           
+          
+           
+        }
+
+
+        section img{
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+           
+        }
+
+        h2{
+            color: #08030c;
+            margin: 10px 0;
+            font-family: 'Bahnschrift', Light;
+            font-weight: 600;
+            font-size: 35px;
+            padding-bottom: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+           
+
+        }
+
+        ul {
+            list-style-type: none; 
+            padding: 0; 
+                   
+        }
+
+        .resource-item {
+            margin: 5px 0;      
+            padding: 4px;       
+            border: 1px solid #fcfafa; 
+            border-radius: 5px;   
+            background-color:#def08c98; 
+            font-family: 'Bahnschrift', Arial, sans-serif, Times, serif;
+            font-weight: 450;
+            font-size: 22px;
+            padding-bottom: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            width: 100%; 
+            height: 200px;
+            color: rgb(6, 84, 87); 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+           
+    
+
+        }
+
+
+
+        .resource-item:hover {
+            background-color: #9986937e;
+          
+        }
+
+        .resource-link {
+            text-decoration: none;  
+            color: #0b325f;       
+            font-weight: bolder; 
+            margin: 10px 0;      
+            padding: 7px;
+            font-family: 'Bahnschrift','Arial Black', 'Arial Narrow' , 'Arial Narrow Bold', sans-serif;
+           
+
+
+        }
+
+        .resource-link:hover {
+            color: #68133b;       
+        }
+
+        @media (max-width: 768px) {
+            .items{
+                flex-direction: column;
+                align-items: center;
+            }
+            section{
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+
+
+
+    
+>>>>>>> 8357b6749f74b09c421318a03eba124ae7412d3d
 
 
 /* FORUM STYLE CLASSES */ 
+
 
