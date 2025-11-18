@@ -22,6 +22,7 @@
             background: linear-gradient(90deg, #3241af 0%, #151B49 100%);
             color: white;
             box-shadow: #929292 0px 4px 6px -1px, #7f7f7f 0px 2px 4px -1px;
+            z-index: 9999; 
         }
 
         .site-header h1 {
@@ -54,7 +55,7 @@
 
         .main {
             padding-top: calc(14px + 1.25rem + 120px);
-            padding-left: 6%;
+            padding-left: 1%;
             align-items: center;
             display: flex;
         }
@@ -118,22 +119,21 @@
             display: flex;
             flex-direction: column;
             gap: 12px; /* space between buttons */
-            align-items: flex-start; /* left-align; use center to center them */
+            align-items: flex-start;
         }
+
+        
 
         /*Information styles*/
 
         .big{
-            padding: 30px;
+            margin-top: 120px;
             text-align: center;
-            font-size: 200%;
-            margin: 30px 0;
-            
+            font-size: 200%;            
           
         }
 
         .pic{
-            
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
@@ -153,6 +153,7 @@
         }
 
         section{
+            margin-top: 120px;
             background-color: rgb(212, 213, 247);
             border-radius: 5px;
             padding: 20px;
