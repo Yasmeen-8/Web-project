@@ -53,7 +53,6 @@
         } 
 
         .main {
-<<<<<<< HEAD
             padding-top: calc(14px + 1.25rem + 120px);
             padding-left: 6%;
             align-items: center;
@@ -65,13 +64,11 @@
         align-items: center; 
         margin-top: 50px; 
         margin-left: 75px;
-=======
            padding-top: calc(14px + 1.25rem + 120px);
            padding-left: 6%;
            align-items: center;
            display: flex;
             
->>>>>>> 8357b6749f74b09c421318a03eba124ae7412d3d
         }
 
         .items{
@@ -117,7 +114,6 @@
             border: 2px solid #151B49;
         }
 
-<<<<<<< HEAD
         .button-group{
             display: flex;
             flex-direction: column;
@@ -125,7 +121,6 @@
             align-items: flex-start; /* left-align; use center to center them */
         }
 
-=======
         /*Information styles*/
 
         .big{
@@ -258,11 +253,6 @@
                 margin-bottom: 20px;
             }
         }
-
-
-
-    
->>>>>>> 8357b6749f74b09c421318a03eba124ae7412d3d
 
 
 /* FORUM STYLE CLASSES */ 
