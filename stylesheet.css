@@ -255,6 +255,69 @@
             }
         }
 
+        .video-section {
+            gap: 50px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+
+        /* LOGIN PAGE */
+        .lbody{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: whitesmoke;
+            color: #151b49;
+        }
+        .logbody{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logbody input{
+            padding: 10px 10px 10px 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            height: 25px;
+            width: 300px;
+        }
+
+        .logbody h1{
+            text-align: center;
+            font-size: 35px;
+            padding-bottom: 100px;
+        }
+
+        .logbody form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logbody button{
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #374398;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .logbody button:hover{
+            background-color: #202c8b;
+        }
+
+        .logitems{
+            align-items: center;
+            margin-top: 270px;
+        }
+
 
 /* FORUM STYLE CLASSES */ 
 

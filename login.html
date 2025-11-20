@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body background="Images/Loginbg.png">
+    <div class="logbody">
+            <button onclick="location.href='index.html'" style="margin-bottom: 50%; margin-left: 10px;">
+                <i class="fa fa-home"></i>
+            </button>
+        <div class="logitems">
+            <h1>Welcome back</h1>
+        <form action="/login" method="POST">
+            <input type="text" id="username" name="username" required placeholder="Username">
+            <br>
+            <input type="password" id="password" name="password" required placeholder="Password">
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+        <div>
+            <img src="Images/loginimg.jpg" alt="Login Image" height=100% style="float:right; padding:0px;">
+        </div>
+    </div>
+</body>
+</html>
