@@ -1,14 +1,28 @@
-let loginForm = document.querySelector('form');
-let usernameInput = document.getElementById('username');
-let passwordInput = document.getElementById('password');
 
-loginForm.addEventListener('submit', function(event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+const signupshow = document.getElementById('signup_show');
+const loginshow = document.getElementById('login_show');
+const loginDiv = document.getElementById('login_div');
+const signupDiv = document.getElementById('signup_div');
 
-    let username = usernameInput.value;
-    let password = passwordInput.value;
+if (signupshow && loginshow && loginDiv && signupDiv) {
+    signupshow.addEventListener('click', () => {
+        signupDiv.style.display = 'block';
+        loginDiv.style.display = 'none';
+    });
 
-    // Perform login logic here
-    console.log('Logging in with:', username, password);
+    loginshow.addEventListener('click', () => {
+        loginDiv.style.display = 'block';
+        signupDiv.style.display = 'none';
+    });
+} else {
+    console.warn('script.js: one or more expected DOM elements are missing', {
+        signup_show: !!signupshow,
+        login_show: !!loginshow,
+        login_div: !!loginDiv,
+        signup_div: !!signupDiv
+    });
+}
+
 });
 

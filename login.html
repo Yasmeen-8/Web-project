@@ -6,14 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
+  
 </head>
+
+
 <body background="Images/Loginbg.png">
-    <div class="logbody">
-            <button onclick="location.href='index.html'" style="margin-bottom: 50%; margin-left: 10px;">
+    <div class="logbody" >
+
+
+
+            <button onclick="location.href='index.html'" style="margin-bottom: 60%; margin-left: 10px;">
                 <i class="fa fa-home"></i>
             </button>
-        <div class="logitems">
+
+
+        <!-- LOGIN FORM -->
+         
+        <div class="logitems" id="login_div">
             <h1>Welcome back</h1>
         <form action="/login" method="POST">
             <input type="text" id="username" name="username" required placeholder="Username">
@@ -22,11 +31,33 @@
             <br>
             <button type="submit">Login</button>
         </form>
-        <p>Don't have an account? <a href="register.html" id="signin">Register here</a></p>
+        <p>Don't have an account? <a href="#" id="signup_show">Register here</a></p>
         </div>
+
+        <!-- SIGNUP FORM -->
+
+        <div class="signitems" id="signup_div" style="display:none">
+            <h1>Create Account</h1>
+        <form action="/signup" method="POST">
+            <input type="text" id="new_username" name="new_username" required placeholder="Username">
+            <br>
+            <input type="email" id="new_email" name="new_email" required placeholder="Email">
+            <br>
+            <input type="password" id="new_password" name="new_password" required placeholder="Password">
+            <br>
+            <input type="password" id="confirm_new_password" name="confirm_new_password" required placeholder="Confirm Password">
+            <br>
+            <button type="submit">Register</button>
+        </form>
+        <p>Have an account? <a href="#" id="login_show">Login here</a></p>
+        </div>
+
+
+
         <div>
             <img src="Images/loginimg.jpg" alt="Login Image" height=100% style="float:right; padding:0px;">
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
