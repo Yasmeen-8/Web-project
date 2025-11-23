@@ -315,7 +315,12 @@
 
         .logitems{
             align-items: center;
-            margin-top: 270px;
+            margin-top: 250px;
+        }
+
+        .signitems{
+            align-items: center;
+            margin-top: 250px;
         }
 
 

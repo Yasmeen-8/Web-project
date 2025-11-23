@@ -1,3 +1,19 @@
+let username;
+let password;
+let email;
+
+document.getElementById("login_button")?.addEventListener("click", function() {
+    if (username === undefined || password === undefined) {
+        //show theres no account registered
+        alert("No account registered. Please register first.");
+        return;
+    }
+
+    username = document.getElementById("username").value;
+    password = document.getElementById("password").value;
+
+    
+});
 
 document.addEventListener('DOMContentLoaded', () => {
 const signupshow = document.getElementById('signup_show');
