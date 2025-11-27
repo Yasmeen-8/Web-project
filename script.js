@@ -5,15 +5,19 @@ let accountnum = -1;
 
 
 document.getElementById("login_button")?.addEventListener("click", function() {
+    let logusername = document.getElementById("username").value;
+    let logpassword = document.getElementById("password").value;
+    console.log("Attempting login with username:", logusername, "and password:", logpassword);
+    console.log("Stored username:", username, "Stored password:", password);
     if (username === undefined || password === undefined) {
         //show theres no account registered
         alert("No account registered. Please register first.");
         return;
     }
-    if (localStorage.getItem("accountname" + accountnum) === username && localStorage.getItem("accountpassword" + accountnum) === password){
+    if (localStorage.getItem("accountname" + accountnum) === logusername && localStorage.getItem("accountpassword" + accountnum) === logpassword){
         document.getElementById("login_error").style.display = "none";
         document.getElementById("login_success").style.display = "block";
-        document.getElementById("username").innerHTML = username;
+        document.getElementById("username").innerHTML = logusername;
     }else{
         document.getElementById("login_error").style.display = "block";
         document.getElementById("login_success").style.display = 'none';
@@ -38,19 +42,15 @@ document.getElementById("register_button").addEventListener("click", function(){
     checkpass2 = document.getElementById("confirm_new_password").value;
 
     if (checkpass1 === checkpass2){
-        if (email.includes("@") === false){
-            document.getElementById("signup_error").style.display = "block";
-            document.getElementById("signup_success").style.display = 'none';
-            let myVariable = "Invalid email address";
-            document.getElementById("signup_error").innerHTML = myVariable;
-        }else{
             document.getElementById("signup_error").style.display = "none";
             document.getElementById("signup_success").style.display = "block";
             accountnum += 1;
             localStorage.setItem("accountname" + accountnum, document.getElementById("new_username").value);
             localStorage.setItem("accountpassword" + accountnum, document.getElementById("new_password").value);
             localStorage.setItem("accountemail" + accountnum, document.getElementById("new_email").value);
-    }}
+            username = document.getElementById("new_username").value;
+            password = document.getElementById("new_password").value;
+    }
        else{
         document.getElementById("signup_error").style.display = "block";
         document.getElementById("signup_success").style.display = 'none';
@@ -68,12 +68,14 @@ const signupDiv = document.getElementById('signup_div');
 
 if (signupshow && loginshow && loginDiv && signupDiv) {
     document.getElementById("signup_success").style.display = 'none';
+    document.getElementById("login_success").style.display = "none";
     signupshow.addEventListener('click', () => {
         signupDiv.style.display = 'block';
         loginDiv.style.display = 'none';
     });
 
     loginshow.addEventListener('click', () => {
+        document.getElementById("login_success").style.display = "none";
         document.getElementById("signup_success").style.display = 'none';
         loginDiv.style.display = 'block';
         signupDiv.style.display = 'none';
@@ -88,4 +90,8 @@ if (signupshow && loginshow && loginDiv && signupDiv) {
 }
 
 });
+
+function usernameDisplay() {
+    document.getElementById("username").innerHTML = localStorage.getItem("accountname" + accountnum);
+}
 
