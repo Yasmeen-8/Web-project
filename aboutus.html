@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Sanctuary</title>
+    <link rel="shortcut icon" href="images/Bahrain polytechnic logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<script>
+    function usernameDisplay() {
+        document.getElementById("username").innerHTML = localStorage.getItem("accountname");
+    }
+</script>
+
+
+<body style="font-family: Arial, Helvetica, sans-serif; background-color: white;" onload="usernameDisplay()">
+    <div class="site-header">
+
+        <img src="Images/Bahrain polytechnic logo.png" width="100" style=" margin-right: 1%;">
+        
+        <div>
+        <ul style="list-style: none; margin-bottom: 10%;">
+        <li><h1>Student Sanctuary</h1></li>
+        </ul>
+        <nav class="header-navi">
+            <ul>
+                <li><a href="index.html" style="font-size: large;">Home</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="Form.html">Forum</a></li>
+                <li><a href="info.html">Resources</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+        </nav>
+
+        </div>
+        <div style="margin-left: 900px;">
+        <p id="username"></p>
+        <button onclick="location.href='login.html'" class="button-style"> sign in </button>
+    </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div style="margin-top: 10%; margin-left: 10%; margin-right: 10%;">
+
+    <h2>Critical Reflection</h2>
+
+    <h3>a. Summary of the Work Completed</h3>
+    <p>
+        Our group developed a website to provide support to Bahrain Polytechnic students suffering from Mental Health Issues. The website is designed to be easy to use and to provide access to resources that will assist students with issues associated with studying including Stress, Anxiety from School and Work and several other common challenges related to academica. The website has six individual pages, each have a different purpose and explanation; describe Articulation and provide a brief overview of the Project. First we discussed together the various components which should be included on the Website and how we would like the final site to visually appear. After we made the decisions we divided our tasks based on the skills each of us possessed. There were a few members who did most of the writing while the rest were busy creating the HTML layout and functionality of all the Pages and linking all the Pages to one site. Once we finished with our respective Components we combined all of it together into one complete Folder. In the final review of the Site we reviewed the pages together, corrected any error in spelling or grammar, and double checked that all hyperlinks connected to their correct endpoint. Although it took some time, it was very rewarding to see our hard work and the End Product which has come together so nicely as a team.
+    </p>
+
+    <h3>b. Challenges Faced and How They Were Overcome</h3>
+    <p>
+        In this project, we had a lot of challenges to work through. One of the first things we saw was how unorganized the layout looked when we started. Some pages felt very empty and others felt very full. The flow of the layout did not seem to flow together easily at all. We reviewed each page again and moved things around until we created a layout that made sense. Another challenge we had was connecting all the pages correctly. Some pages had links that took you to places that were not supposed to happen or did not work at all, and it was very frustrating. Once we realized this, we began to double check each link individually and retest them after very small changes. This showed us it is important to take your time and pay attention to even the smallest of details as much as possible.
+    </p>
+    <p>
+ The coding part can definitely be tricky, especially when it comes to smaller coding mistakes. Sometimes, an additional space or missing bracket can create a huge impact on how the page appears compared to what we thought it would look like. At first, this created confusion for us; however, it became clearer as we realized that making minor errors is a completely normal occurrence for most web developers. Therefore, when we faced these issues, we looked online for information from individuals who had run into the same problems to find solutions. We also frequently asked one another for help when we could not resolve the issues. Over time, we became increasingly skilled at diagnosing the mistakes much quicker, and although these setbacks did slow down our progress, they offered us additional insight into how to develop websites and the need to remain patient as we continued to troubleshoot the many different possibilities of coding.
+    </p>
+
+    <h3>c. What We Learned About Building Websites</h3>
+    <p>
+        The process of building websites has been an incredible learning experience, as evidenced by how far we have developed as designers of websites since this project began. From the technical aspect of building websites, we learned how important it is to use HTML correctly on your web page and organize your page using HTML. We quickly became comfortable working with elements such as headings, paragraphs, and links, which are the basic components of website building. Furthermore, we realized that when we do not correctly use HTML tags on our web page, then our web page will break down pretty quickly. We learned that through the continuous testing of our web pages we were able to find errors at an early stage, and as a result, we could fix them before they began to become more serious issues. Additionally, we had the chance to learn CSS as a part of this process. While we may not have gotten into advanced CSS styles, we learned how to set up spacing and alignment of other types of types on the web page, as well as the styles of various web page elements. Finally, we gained a greater understanding of how CSS and HTML work together when it comes to creating a fully functional website.
+    </p>
+    <p>
+        The group experience offered several important lessons about collaboration. Most importantly, communication was vital to ensure everyone was updated on progress and aware of remaining tasks. Group members learned to allocate work according to our strengths and to help each other when one was having difficulty completing a task. Completing this group project in conjunction with our other homework assignments and exams provided valuable experience in time management. While it was occasionally stressful, the collaboration of the group provided additional support that made the experience less difficult. As a result of this experience, all group members gained confidence not only in their technical ability but also in their collective ability to work as a group to complete the project.
+    </p>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div style="margin-left: 2%;">
+            <h5> email : Student.sancturary@outlook.com </h5>
+            <h5> Section: 21 </h5>
+            <h5> members: </h5>
+            <h5> Student IDs: </h5>
+        </div>
+        <div> 
+        <h3> Socials </h3>
+        <div style=" margin-right: 2%;"> 
+            <button class="button-style"> Instagram </button>
+            <button class="button-style"> Tiktok </button>
+            <button class="button-style"> Twitter </button>
+            
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

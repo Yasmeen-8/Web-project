@@ -68,30 +68,42 @@
             }
             </style>
             </head>
+
+
+<script>
+    function usernameDisplay() {
+        document.getElementById("username").innerHTML = localStorage.getItem("accountname");
+    }
+</script>
+
+
         <body>
 
 
             <!-- HEADERS -->
-    <div class="site-header">
+  <div class="site-header">
 
         <img src="Images/Bahrain polytechnic logo.png" width="100" style=" margin-right: 1%;">
         
         <div>
         <ul style="list-style: none; margin-bottom: 10%;">
-        <li><h1 style="color: white;">Student Sanctuary</h1></li>
+        <li><h1>Student Sanctuary</h1></li>
         </ul>
         <nav class="header-navi">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" style="font-size: large;">Home</a></li>
                 <li><a href="tips.html">Tips</a></li>
-                <li><a href="Form.html"  style="font-size: large;">Forum </a></li>
+                <li><a href="Form.html">Forum</a></li>
                 <li><a href="info.html">Resources</a></li>
+                <li><a href="aboutus.html">About us</a></li>
             </ul>
         </nav>
+
         </div>
-
-        <button class="button-style" style="margin-left: 60%; margin-top: 3%;"> sign in </button>
-
+        <div style="margin-left: 900px;">
+        <p id="username"></p>
+        <button onclick="location.href='login.html'" class="button-style"> sign in </button>
+    </div>
     </div>
     
     

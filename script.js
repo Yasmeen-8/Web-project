@@ -28,19 +28,23 @@ document.getElementById("login_button")?.addEventListener("click", function() {
 });
 
 
-// For storage of the data we make new items by doing a localStorage.setItem(name, value)
-// then to retrieve it we use getItem(name)
-
-
 
 document.getElementById("register_button").addEventListener("click", function(){
-    
+
     let checkpass1, checkpass2;
 
     checkpass1 = document.getElementById("new_password").value;
     checkpass2 = document.getElementById("confirm_new_password").value;
+    
+    const emailInput = document.getElementById('new_email');
+    const email = emailInput ? (emailInput.value || '').trim() : '';
 
-    if (checkpass1 === checkpass2){
+    if (email && email.includes("@") && email.includes(".")){
+
+        if (checkpass1 === checkpass2) { // check if Passwords match
+
+        if ( checkpass1.length >= 6 && checkpass1.match(/[0-9]/) && checkpass1.match(/[a-z]/) && checkpass1.match(/[A-Z]/)) {
+            // Password is strong
             document.getElementById("signup_error").style.display = "none";
             document.getElementById("signup_success").style.display = "block";
             localStorage.setItem("accountname", document.getElementById("new_username").value);
@@ -48,12 +52,31 @@ document.getElementById("register_button").addEventListener("click", function(){
             localStorage.setItem("accountemail", document.getElementById("new_email").value);
             username = document.getElementById("new_username").value;
             password = document.getElementById("new_password").value;
+
+        } else { // Password is not strong enough
+            console.log("Password is not strong enough");
+            document.getElementById("signup_error").style.display = "block";
+            document.getElementById("signup_success").style.display = 'none';
+            let myVariable = "Passwords isnt strong enough.";
+            document.getElementById("signup_error").innerHTML = myVariable;}
+
     }
-       else{
+       else{ //passwords dont match
+        console.log("Passwords don't match");
         document.getElementById("signup_error").style.display = "block";
         document.getElementById("signup_success").style.display = 'none';
         let myVariable = "Passwords don't match";
         document.getElementById("signup_error").innerHTML = myVariable;
+    }
+
+    }else{  //email format invalid
+        console.log("Invalid email format");
+        document.getElementById("signup_error").style.display = "block";
+        document.getElementById("signup_success").style.display = 'none';
+        let myVariable = "Please enter a valid email address";
+        document.getElementById("signup_error").innerHTML = myVariable;
+        return;
+
     }
 
 });

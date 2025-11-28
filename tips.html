@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<script>
+    function usernameDisplay() {
+        document.getElementById("username").innerHTML = localStorage.getItem("accountname");
+    }
+</script>
+
+
 <body>
     <!-- HEADER -->
         <div class="site-header">
@@ -18,16 +26,19 @@
         </ul>
         <nav class="header-navi">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tips.html"  style="font-size: large;">Tips</a></li>
+                <li><a href="index.html" style="font-size: large;">Home</a></li>
+                <li><a href="tips.html">Tips</a></li>
                 <li><a href="Form.html">Forum</a></li>
                 <li><a href="info.html">Resources</a></li>
+                <li><a href="aboutus.html">About us</a></li>
             </ul>
         </nav>
+
         </div>
-
-        <button class="button-style" style="margin-left: 60%; margin-top: 3%;"> sign in </button>
-
+        <div style="margin-left: 900px;">
+        <p id="username"></p>
+        <button onclick="location.href='login.html'" class="button-style"> sign in </button>
+    </div>
     </div>
 
     <!-- TIPS CONTENT -->
