@@ -39,13 +39,25 @@ document.getElementById("register_button").addEventListener("click", function(){
 
     checkpass1 = document.getElementById("new_password").value;
     checkpass2 = document.getElementById("confirm_new_password").value;
+    let emailInput = document.getElementById("new_email").value;
+
+    // Email validation using regex pattern
+    let emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    let isValidEmail = emailPattern.test(emailInput);
+
+    if (!isValidEmail) {
+        document.getElementById("signup_error").style.display = "block";
+        document.getElementById("signup_success").style.display = 'none';
+        document.getElementById("signup_error").innerHTML = "Please enter a valid email address";
+        return;
+    }
 
     if (checkpass1 === checkpass2){
             document.getElementById("signup_error").style.display = "none";
             document.getElementById("signup_success").style.display = "block";
             localStorage.setItem("accountname", document.getElementById("new_username").value);
             localStorage.setItem("accountpassword", document.getElementById("new_password").value);
-            localStorage.setItem("accountemail", document.getElementById("new_email").value);
+            localStorage.setItem("accountemail", emailInput);
             username = document.getElementById("new_username").value;
             password = document.getElementById("new_password").value;
     }
