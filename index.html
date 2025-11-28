@@ -8,6 +8,14 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
+
+<script>
+    function usernameDisplay() {
+        document.getElementById("username").innerHTML = localStorage.getItem("accountname");
+    }
+</script>
+
+
 <body style="font-family: Arial, Helvetica, sans-serif; background-color: white;" onload="usernameDisplay()">
     <div class="site-header">
 
@@ -23,6 +31,7 @@
                 <li><a href="tips.html">Tips</a></li>
                 <li><a href="Form.html">Forum</a></li>
                 <li><a href="info.html">Resources</a></li>
+                <li><a href="info.html">About us</a></li>
             </ul>
         </nav>
 

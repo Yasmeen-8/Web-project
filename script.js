@@ -93,4 +93,3 @@ function usernameDisplay() {
     document.getElementById("username").innerHTML = localStorage.getItem("accountname");
     console.log("Username displayed:", localStorage.getItem("accountname"));
 }
-
