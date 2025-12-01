@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Sanctuary</title>
     <link rel="shortcut icon" href="images/Bahrain polytechnic logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
@@ -40,6 +41,48 @@
         <p id="username"></p>
         <button onclick="location.href='login.html'" class="button-style"> sign in </button>
     </div>
+    </div>
+     <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" style="max-height: 450px; overflow: hidden; margin-bottom: 50px;">
+        
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/slide1.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to Student Sanctuary</h5>
+                    <p>Supporting Bahrain Polytechnic students.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/slide2.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mental Health Resources</h5>
+                    <p>Stress, anxiety, and academic support.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/slide3.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Community Support</h5>
+                    <p>Connect through our forum and tips.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -88,7 +131,7 @@
         </div>
         </div>
     </div>
-
+   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
