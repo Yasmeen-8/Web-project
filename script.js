@@ -1,6 +1,7 @@
 let username;
 let password;
 let email;
+let signed_in = false;
 
 
 document.getElementById("login_button")?.addEventListener("click", function() {
@@ -17,6 +18,8 @@ document.getElementById("login_button")?.addEventListener("click", function() {
         document.getElementById("login_error").style.display = "none";
         document.getElementById("login_success").style.display = "block";
         document.getElementById("username").innerHTML = logusername;
+        signed_in = true;
+        console.log("Login successful for user:", logusername);
     }else{
         document.getElementById("login_error").style.display = "block";
         document.getElementById("login_success").style.display = 'none';
@@ -54,7 +57,9 @@ document.getElementById("register_button").addEventListener("click", function(){
             localStorage.setItem("accountpassword", document.getElementById("new_password").value);
             localStorage.setItem("accountemail", document.getElementById("new_email").value);
             username = document.getElementById("new_username").value;
-            password = document.getElementById("new_password").value;} else { // Username too short
+            password = document.getElementById("new_password").value;
+            signed_in = true;
+        } else { // Username too short
                 
                 console.log("Username too short");
                 document.getElementById("signup_error").style.display = "block";
@@ -125,4 +130,18 @@ if (signupshow && loginshow && loginDiv && signupDiv) {
 function usernameDisplay() {
     document.getElementById("username").innerHTML = localStorage.getItem("accountname");
     console.log("Username displayed:", localStorage.getItem("accountname"));
+
+    if(localStorage.getItem("accountname") !== null) {
+
+        signed_in = true;
+    } else {
+        signed_in = false;
+    }
+
+    if (signed_in) {
+        document.getElementById("text").innerHTML = "Sign Out";
+    } else {
+        document.getElementById("text").innerHTML = "Sign In";
+    }
+
 }
