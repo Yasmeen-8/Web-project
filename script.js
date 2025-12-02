@@ -38,12 +38,15 @@ document.getElementById("register_button").addEventListener("click", function(){
     
     const emailInput = document.getElementById('new_email');
     const email = emailInput ? (emailInput.value || '').trim() : '';
+    const username = document.getElementById("new_username").value;
+
 
     if (email && email.includes("@") && email.includes(".")){
 
         if (checkpass1 === checkpass2) { // check if Passwords match
 
         if ( checkpass1.length >= 6 && checkpass1.match(/[0-9]/) && checkpass1.match(/[a-z]/) && checkpass1.match(/[A-Z]/)) {
+            if (username.length > 3){ // Username length check
             // Password is strong
             document.getElementById("signup_error").style.display = "none";
             document.getElementById("signup_success").style.display = "block";
@@ -51,7 +54,14 @@ document.getElementById("register_button").addEventListener("click", function(){
             localStorage.setItem("accountpassword", document.getElementById("new_password").value);
             localStorage.setItem("accountemail", document.getElementById("new_email").value);
             username = document.getElementById("new_username").value;
-            password = document.getElementById("new_password").value;
+            password = document.getElementById("new_password").value;} else { // Username too short
+                
+                console.log("Username too short");
+                document.getElementById("signup_error").style.display = "block";
+                document.getElementById("signup_success").style.display = 'none';
+                let myVariable = "Username must be longer than 3 characters.";
+                document.getElementById("signup_error").innerHTML = myVariable;
+            }
 
         } else { // Password is not strong enough
             console.log("Password is not strong enough");
