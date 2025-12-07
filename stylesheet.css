@@ -376,7 +376,31 @@
             font-weight: 500;
         }
 
+        .writinginmaking{
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
 
+        .imgdivmaking{
+            margin-top: 30px;
+            margin-bottom: 50px;
+            align-items: center;
+        }
+
+        .imgdivmaking img{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+
+        }
 /* FORUM STYLE CLASSES */ 
 
 
